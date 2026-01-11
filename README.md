@@ -13,6 +13,8 @@ onPause(): Sistem uygulamanın arkaplana atıldığını veya başka bir olayın
 
 onStop(): Kullanıcı çıkış yaptığında bu kodlar çalışır. İşlemleri kapatmak için kullanabiliriz. Bu method, kullanıcının haberi olmadan gereksiz CPU işlemlerini sonlandırarak kullanıcı dostu bir deneyim sunar. Kullanıcı etkileşimi tamamen sona erdiğinde onDestory() methodu çalışır.
 
+onRestart(): Bir aktivite durdurulduktan sonra kendini yeniden başlattığında sistem onRestart() metodunu çağırır. onRestart() metodu, durdurulduğu zamandan itibaren aktivite durumunu geri yükler. Android etkinliğindeki onRestart() callback metodunu her zaman onStart() ve ardından onResume() metodu izleyecektir.
+
 onDestroy(): Activity yok edilmeden önce çağrılan kısımdır. Kullanıcı ile uygulama arasında bir bağlantı kalmamıştır. Arka planın temizlenmesi için çağrılan metottur.
 
 
